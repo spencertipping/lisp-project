@@ -1175,13 +1175,6 @@ meta::retriever('sdocp', <<'__fef74cd94fa8761618662802f0bfc171');
 my $attribute = attribute($_[0]);
 exists $data{"sdoc::$attribute"} ? sdocp("sdoc::$attribute") : undef;
 __fef74cd94fa8761618662802f0bfc171
-meta::sdoc('lisp::main', <<'__e405364bc2b93e683461d4c6da27bc70');
-Example source code.
-This code will be run through SDoc and the Perl object preprocessor, in that order.
-If you have CLisp installed, you can run it by typing 'clisp main'.
-
-(format t "~a~%" "Hello world!")
-__e405364bc2b93e683461d4c6da27bc70
 meta::template('comment', '\'\';     # A mechanism for line or block comments.');
 meta::template('eval', <<'__eb0b1058649eb2d833f348540516b358');
 my $result = eval $_[0];
